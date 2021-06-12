@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(img/bk.jpg);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    margin: auto;
+    max-width: 1200px;
+}
+
+h1{
+    font-size: 6em;
+    color: white;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 4px;
+}
+
+h2{
+    font-size: 4em;
+}
+
+h3{
+    font-size: 3em;
+}
+
+h4{
+    font-size: 2em;
+    font-style: italic;
+}
+
+h5{
+    font-size: 1em;
+}
+
+h6{
+    font-size: 0.5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+#section1-modal{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#section1-modal ol{
+    padding: 0 2em 2em 2em;
+}
+
+#section1-modal ol li{
+    margin-top: 1em;
+}
+
+#section1-modal form{
+    padding: 1em 0 1em 0;
+}
+
+#section1-modal input{
+    width: 100%;
+    outline: none;
+}
+
+#section1-modal > div{
+    border-bottom: solid 2em rgba(0, 0, 0, 0);
+    border-radius: 1em;
+    position: absolute;
+    padding: 1em;
+    width: 600px;
+    height: 800px;
+    background: black;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#section1-modal > div > div{
+    margin-top: 1em;
+    display: flex;
+}
+
+#section1-modal > div > div > div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2em;
+}
+
+#section1-modal span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 0.5em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#section1-modal input:nth-child(1){
+    padding: 0.5em 1em 0.5em 1em;
+    border: none;
+    border-radius: 2em;
+	font-family: FontAwesome, 'Josefin Sans', sans-serif;
+    font-size: 1em;
+}
+
+#section1-modal img{
+    width: 250px;
+    height: 250px;
+}
+
+#section1-modal a{
+    color: #1FD35E;
+    font-weight: bolder;
+    margin-top: 1em;
+}
+
+#section1-modal a:hover{
+    color: white;
+}
+
+#section1-modal h4{
+    margin-top: 0.5em;
+}
+
+#section1-modal form{
+    margin-top: 0.5em;
+}
+
+#section2-modal{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#section2-modal > div{
+    border-radius: 1em;
+    width: 950px;
+    height: 650px;
+    background-color: black;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    padding: 1em;
+}
+
+#section2-modal form p{
+    display: none;
+    margin-top: 0.3em;
+    color: red;
+}
+
+#section2-modal form p span{
+    margin-right: 0.3em;
+}
+
+#section2-modal > div > div:last-of-type{
+    display: none;
+}
+
+#section2-modal h4{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#section2-modal form > div{
+    margin-top: 1em;
+}
+
+#section2-modal form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#section2-modal form input{
+    outline: none;
+    width: 98.2%;
+    height: 3em;
+    padding-left: 1em;
+}
+
+#section2-modal form select{
+    width: 100%;
+    height: 3.4em;
+    padding-left: 1em;
+    outline: none;
+}
+
+#section2-modal form div:nth-of-type(3){
+    display: flex;
+    width: 102.2%;
+}
+
+#section2-modal form div:nth-of-type(3) div{
+    margin-right: 2em;
+    width: 30%;
+}
+
+#section2-modal form div:nth-of-type(3) > div:last-of-type{
+    display: flex;
+    flex-direction: column;
+}
+
+#section2-modal form > div:last-of-type{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#section2-modal form input[type="number"]{
+    text-align: center;
+    padding: initial;
+}
+
+#section2-modal form > div:last-of-type > label{
+    position: absolute;
+    left: 0;
+}
+
+#section2-modal form > div:last-of-type div{
+    display: flex;
+    align-items: center;
+}
+
+#section2-modal form > div:last-of-type div span{
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+
+#section2-modal form > div:last-of-type label:nth-child(n+2){
+    font-weight: bolder;
+}
+
+#section2-modal form input[type="radio"]{
+    width: initial;
+    margin-right: 0.5em;
+}
+
+#section2-modal form input[type="submit"]{
+    margin-top: 2em;
+    width: initial;
+    height: initial;
+    padding: 1em;
+    align-self: center;
+    background-color: #05304b;
+    border: none;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+}
+
+#section2-modal form input[type="submit"]:hover{
+    background-color: #163a50;
+    cursor: pointer;
+}
+
+#section2-modal > div > div > span:first-of-type{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+header nav a img{
+    width: 200px;
+    height: 150px;
+}
+
+header nav{
+    background-color: white;
+    text-align: center;
+}
+
+header{
+    position: relative;
+    height: 100vh;
+}
+
+#header-bk{
+    z-index: -1;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header div{
+    height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1 h2{
+    padding: 1em 0 1em 0;
+    text-align: center;
+}
+
+#section1 > div:nth-child(1) div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+#section1 > div:nth-child(1) div img{
+    width: 350px;
+    height: 350px;
+    transition: 1s ease;
+}
+
+#section1 > div:nth-child(1) div img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#section1 > div:nth-child(1) div h4{
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+#section2{
+    margin-top: 4em;
+    background: url(img/sbk2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section2 h2{
+    padding: 1em 0 1em 0;
+    text-align: center;
+}
+
+#section2 > div:nth-of-type(1){
+    padding-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+#section2 > div:nth-of-type(1) article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section2 > div:nth-of-type(1) article span{
+    margin-top: 1em;
+    padding: 1em;
+    color: white;
+    background: #05304b;
+    font-weight: bolder;
+}
+
+#section2 > div:nth-of-type(1) article span:hover{
+    cursor: pointer;
+    background: #163a50;
+}
+
+#section2 > div:nth-of-type(1) article > div{
+    width: 550px;
+    height: 550px;
+    position: relative;
+}
+
+#section2 > div:nth-of-type(1) article:nth-child(1) > div{
+    background: url(img/vl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#section2 > div:nth-of-type(1) article:nth-child(2) > div{
+    background: url(img/barcelona.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#section2 > div:nth-of-type(1) article:nth-child(3) > div{
+    background: url(img/asun.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#section2 > div:nth-of-type(1) article div div{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+}
+
+#section2 > div:nth-of-type(1) article div h4{
+    margin-bottom: 0.5em;
+}
+
+#section3 h2{
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+
+#section3 div{
+    width: 100%;
+    height: 850px;
+    background: url(img/g1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section3 div span{
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+#section4{
+    padding-bottom: 4em;
+}
+
+#section4 > div{
+    position: relative;
+}
+
+#section4 > div div:nth-of-type(1){
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#section4 h2{
+    padding: 1em 0 1em 0;
+    text-align: center;
+}
+
+#section4 > div article h4{
+    color: white;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#section4 > div article:hover h4{
+    opacity: 1;
+}
+
+#section4 > div article{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+}
+
+#section4 > div article:nth-child(1){
+    background: url(img/rm.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#section4 > div article:nth-child(2){
+    background: url(img/st.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+#section4 > div article:nth-child(3){
+    background: url(img/ap.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#section4 > div article:nth-child(4){
+    background: url(img/sm.jpg);
+    background-size: 180%;
+    background-position: right top;
+}
+
+#section4 > div article:nth-child(5){
+    background: url(img/ga.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+#section4 > div div:nth-of-type(2){
+    display: none;
+    position: relative;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: url(img/bk.jpg);
+}
+
+#section4 > div div:nth-of-type(2) span{
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5em;
+    right: 0;
+    padding: 0.5em;
+}
+
+footer{
+    background: black;
+    padding: 4em;
+    text-align: center;
+    color: white;
+}
+
+footer p{
+    margin-bottom: 1em;
+}
+
+footer p:last-of-type{
+    margin-bottom: 0;
+}
+
+footer div{
+    margin-bottom: 1em;
+}
+
+footer div a{
+    font-size: 2em;
+    margin-right: 0.5em;
+    color: white;
+}
+
+footer div a:last-of-type{
+    margin-right: 0;
+}
+
+footer div a:nth-of-type(1):hover{
+    color: #F90002;
+}
+
+footer div a:nth-of-type(2):hover{
+    color: #673EBA;
+}
+
+footer div a:nth-of-type(3):hover{
+    color: #1DA1F2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
