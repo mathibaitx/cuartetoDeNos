@@ -19,6 +19,7 @@
     <div id="section1-modal">
         <div>
             <div>
+                <span><i class="far fa-times-circle"></i></span>
                 <div>
                     <img src="" alt="">
                     <a href="#">
@@ -36,28 +37,23 @@
                 <input type="search" placeholder='&#xf002 Buscar canción'>
             </form>
             <ol></ol>
-            <span><i class="far fa-times-circle"></i></span>
         </div>
     </div>
     <div id="section2-modal">
         <div>
             <div>
-                <h4>Comprar</h4>
-                <span href="#"><i class="far fa-times-circle"></i></span>
+                <h4></h4>
+                <span><i class="far fa-times-circle"></i></span>
             <form action="">
-                <select name="" id="show">
-                    <option value="Show" disabled>Show</option>
-                    <option value="Vive Latino 2020">Vive Latino 2020</option>
-                    <option value="El Cuarteto de Nos Tour Barcelona">El Cuarteto de Nos Tour Barcelona</option>
-                    <option value="Asuncionico 2019">Asuncionico 2019</option>
-                </select>
                 <div>
                     <input id="nombre" type="text" placeholder="Nombre">
                     <p><span><i class="fas fa-exclamation-circle"></i></span>Este campo es obligatorio.</p>
+                    <div><span><i class="fas fa-check-circle"></i></span></div>
                 </div>
                 <div>
                     <input id="apellido" type="text" placeholder="Apellido">
                     <p><span><i class="fas fa-exclamation-circle"></i></span>Este campo es obligatorio.</p>
+                    <div><span><i class="fas fa-check-circle"></i></span></div>
                 </div>
                 <div>
                     <div>
@@ -65,14 +61,17 @@
                             <option value="Entradas" selected disabled>Entradas</option>
                         </select>
                         <p><span><i class="fas fa-exclamation-circle"></i></span>Este campo es obligatorio.</p>
+                        <div><span><i class="fas fa-check-circle"></i></span></div>
                     </div>
                     <div>
                         <input id="cantidad" type="number" name="" placeholder="Cantidad" min="1" max="50">
                         <p><span><i class="fas fa-exclamation-circle"></i></span>Este campo es obligatorio.</p>
+                        <div><span><i class="fas fa-check-circle"></i></span></div>
                     </div>
                     <div>
                         <input id="fecha" type="date">
                         <p><span><i class="fas fa-exclamation-circle"></i></span>Este campo es obligatorio.</p>
+                        <div><span><i class="fas fa-check-circle"></i></span></div>
                     </div>
                 </div>
                 <div>
@@ -83,16 +82,13 @@
                         <span><i class="fas fa-money-bill"></i></span>
                     </div>
                     <div>
-                        <input id="efectivo" value="tarjeta" name="pago" type="radio">
+                        <input id="tarjeta" value="tarjeta" name="pago" type="radio">
                         <label for="tarjeta">Tarjeta</label>
                         <span><i class="far fa-credit-card"></i></span>
                     </div>
                 </div>
-                <input type="submit" value="COMPRAR">
+                <input type="submit" value="COMPRAR" disabled>
             </form>
-            </div>
-            <div>
-            <span><i class="fas fa-check-circle"></i></span>
             </div>
         </div>
     </div>
@@ -182,8 +178,8 @@
     <section id="section3">
         <h2>GALERÍA</h2>
         <div>
-            <span><i class="fas fa-arrow-circle-left"></i></span>
-            <span><i class="fas fa-arrow-circle-right"></i></span>
+            <span id="atras"><i class="fas fa-arrow-circle-left"></i></span>
+            <span id="adelante"><i class="fas fa-arrow-circle-right"></i></span>
         </div>
     </section>
     <section id="section4">
@@ -207,11 +203,13 @@
                 </article>
             </div>
             <div>
-                <span><i class="far fa-times-circle"></i></span>
-                <img src="" alt="">
-                <h3></h3>
-                <span></span>
-                <p></p>
+                <div>
+                    <span><i class="far fa-times-circle"></i></span>
+                    <img src="" alt="">
+                    <h3></h3>
+                    <span></span>
+                    <p></p>
+                </div>
             </div>
         </div>
     </section>
