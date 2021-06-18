@@ -519,7 +519,7 @@ function section4GustavoAntuña(){
 
 function modoNocturno(){
     let hora = (new Date).getHours();
-    if((hora >= 19 && hora <= 23) || (hora >= 1 && hora <= 7)){
+    if((hora >= 19 && hora <= 23) || (hora >= 0 && hora <= 6)){
         $("body").css({"background": "url(img/bkBlack.jpg)", "color": "white"});
         $("header nav").css({"background": "black"});
         $("header nav img").css({"filter": "invert(100%)"})
